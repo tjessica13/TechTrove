@@ -1,0 +1,211 @@
+
+/* Defaults from creation */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+
+/* Custom stuff below */
+
+:root {
+  --light-grey: #f5f5f5; /* Item square bg */
+  --light-red-bg: #ffdada; /* Our bg theme */
+  --darker-red-bg: #f47979; /* On hover color */
+  --dark-red-bg: #ff5757; /* Button bg */
+}
+
+
+/* Truncate for long names */
+p{
+  max-width: 95%;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+/* Style the container for each item */
+.item {
+  position: relative;
+  display: inline-block;
+  background-color:var(--light-grey);;
+  flex: 1;
+  width: 22.45%;
+  height: 185px;
+  margin: 2px;
+  padding-bottom: 2px;
+}
+
+/* Style the subcontainer for each item */
+.item-subcontainer {
+  display: inline-block;
+  text-align: center;
+  max-width: 40%;
+  position: absolute;
+  bottom: 4px;
+  left: 20px;
+}
+.item-subcontainer-categories {
+  display: inline-block;
+  text-align: center;
+  max-width: 40%;
+  position: absolute;
+  bottom: 4px;
+  left: 10px;
+}
+
+/* Constrain img dims for grid */
+img {
+  object-fit: contain;
+  width: 50%;
+  max-height: 70%;
+  overflow: hidden;
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+}
+
+/* Button alignment */
+.btn-primary{
+  position: relative;
+  bottom: 0;
+  left: 2px;
+  }
+
+.navbar{
+  font-size: 20px !important;
+  margin-left: 10px;
+  margin-right: 7px;
+}
+
+.navButton{
+    padding-left: 20px;
+    margin-left: 10px;
+    margin-right: 0px;
+    border: none;
+}
+/* Sidebar */
+.sidebar {
+  display: inline-block;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0px 0 0; /* Height of navbar */
+  margin: -22px 0 30px 0;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 0%), 0 2px 10px 0 rgb(0 0 0 / 0%);
+  width: auto;
+  height: 100%;
+  z-index: 1;
+}
+@media (max-width: 992px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+.sidebar .active {
+  border-radius: 0px;
+  box-shadow: 0 0px 0px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+/* Sidebar item custom bg */
+.list-group-mine .list-group-item {
+  background-color: var(--light-red-bg);;
+  border-top: 1px solid #ffffff;
+  border-left-color: #fff;
+  border-right-color: #fff;
+}
+.list-group-mine .list-group-item:hover {
+  background-color: var(--darker-red-bg);;
+}
+
+.Modal {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  right: 20%;
+  bottom: 20%;
+  border: 1px solid #ccc;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Multi Slider */
+.range{
+  margin-top: 40px;
+  text-align: center;
+}
+.multi-range-slider {
+  display: flex;
+  position: relative;
+  border: none !important;
+  border-radius: 10px;
+  padding: 20px 10px;
+  box-shadow: none !important;
+  flex-direction: column;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.multi-range-slider .thumb .caption * {
+  position: absolute;
+  min-width: 30px;
+  height: 30px;
+  font-size: 100%;
+  text-align: center;
+  line-height: 0px;
+  background-color: rgb(255, 100, 100) !important;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  padding: 0px 5px;
+  white-space: nowrap;
+}
+
+
+/* Grey box around min/max price */
+.priceboxModal {
+  display: inline-block;
+  width:45%;
+  height:67px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 15px 0px 10px 10px;
+}
+
+/* Styling for quantity in revview order */
+.quantity {
+  padding: inherit;
+  color: gray;
+  font-size: 0.8rem;
+}
+
+
+/* Style the container for the FAQ*/
+.faq {
+  position: relative;
+  background-color:var(--light-grey);
+  align-self: center;
+  flex: 1;
+  margin: 7px;
+  padding: 4px;
+}
