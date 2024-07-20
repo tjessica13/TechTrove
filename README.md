@@ -1,5 +1,7 @@
 TechTrove is a website for buying computer hardware parts and components. 
 
+See TechTrove_Figma_Designs.pdf for high fidelity prototype sketches.
+
 The website was designed using the usability heuristics:
 
 1. Consistency
