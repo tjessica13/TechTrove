@@ -19,4 +19,4 @@ This website was created for a Software Engineering user interface design and an
 
 This was created as a group project with 4 people.
 
-Warning: This was created in March 2023, and the dependencies have not been updated. There may be errors when trying to run.
+Warning: This was created in March 2023, and the dependencies were not updated and therefore removed from this project because of errors when trying to run.
